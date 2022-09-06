@@ -1,0 +1,773 @@
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvies</title>
+    <!-- main template css file -->
+    <link rel="stylesheet" href=" {% static 'marvies/css/template3.css'%}">
+    <!-- normalization -->
+    <link rel="stylesheet" href="{% static 'marvies/css/norm.css'%}">
+    <!-- font awesome -->
+    <link rel="stylesheet" href=" {% static 'marvies/css/all.min.css'%}">
+    <!-- googel fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;900&family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+
+</head>
+
+<body>
+    <!-- start header -->
+    <div class="header" id="header">
+        <div class="container">
+            <a href="#" class="logo">Marvies Soft Technologies</a>
+            <ul class="main-nav">
+                <li><a href="#Articles">Articles</a> </li>
+                <li><a href="#Gallery">Gallery</a> </li>
+                <li><a href="#Features">Features</a> </li>
+                <li><a class="other" href="#">Other links</a>
+                    <!-- start mega menu -->
+                    <div class="mega-menu">
+                        <div class="image">
+                            <img src=" {% static 'marvies/imgs/megamenu.png'%}">
+                        </div>
+                        <ul class="links">
+                            <li>
+                                <a href="#Testimonials"><i class="far fa-comments fa-fw"></i> Testimonials </a>
+                            </li>
+                            <li>
+                                <a href="#Team Members"><i class="far fa-user fa-fw"></i> Team Members </a>
+                            </li>
+                            <li>
+                                <a href="#Services"><i class="far fa-building fa-fw"></i> Services </a>
+                            </li>
+                            <li>
+                                <a href="#Our Skills"><i class="far fa-check-circle fa-fw"></i> Our Skills </a>
+                            </li>
+                            {% comment %} <li>
+                                <a href="#"><i class="far fa-clipboard fa-fw"></i> How It works </a>
+                            </li> {% endcomment %}
+                        </ul>
+                        <ul class="links">
+                            {% comment %} <li><a href="#Events"><i class="far fa-calendar-alt fa-fw"></i> Events </a></li> {% endcomment %}
+                            <li>
+                                <a href="#Pricing Plans"><i class="fas fa-server fa-fw"></i> Pricing Plans</a>
+                              </li>
+                            {% comment %} <li><a href="#Top Videos"><i class="far fa-play-circle fa-fw"></i> Top Videos </a></li> {% endcomment %}
+                            <li><a href="#Stats"><i class="far fa-chart-bar fa-fw"></i> Stats </a></li>
+                            {% comment %} <li><a href="#Request A Discount"><i class="far fa-percent fa-fw"></i> Request A Discount </a> {% endcomment %}
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- end mega menu -->
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- end header -->
+    <!-- start landing -->
+    <div class="landing">
+        <div class="container">
+            <div class="text">
+                <h1> Welcom, To <span>Marvies</span> world</h1>
+                <p>We at marvies aim for the best technology and we deliver the best.<br>we have done lots of works for both foreign and local clients
+                     ,<br>We have also taught a lot of students on tech skills. 
+                    <br>Your Best At Our Heart </p>
+            </div>
+            <div class="imags">
+                <img src="{% static 'marvies/imgs/work-steps.png'%}"><a href="" class="go-down"></a>
+            </div>
+        </div>
+        <a href="#Articles" class="go-down">
+            <i class="fas fa-angle-double-down fa-2x"></i>
+        </a>
+
+    {% comment %} </div>
+    <!-- end landing -->
+    <!-- start articals -->
+    <div class="articles" id="Articles">
+        <h2 class="main-titel">Articles</h2>
+        <div class="container">
+            <div class="box">
+                <img src=" {% static 'marvies/imgs/cat-01.jpg '%}">
+                <div class="content">
+                    <h3>Test Title</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut exceptur</p>
+                </div>
+                <div class="info">
+                    <a href="#">Read More</a>
+                    <i class="fas fa-long-arrow-alt-right"></i>
+                </div>
+            </div>
+            <div class="box">
+                <img src="{% static 'marvies/imgs/cat-02.jpg '%}">
+                <div class="content">
+                    <h3>Test Title</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut exceptur</p>
+                </div>
+                <div class="info">
+                    <a href="#">Read More</a>
+                    <i class="fas fa-long-arrow-alt-right"></i>
+                </div>
+            </div>
+            <div class="box">
+                <img src="{% static 'marvies/imgs/cat-03.jpg '%}">
+                <div class="content">
+                    <h3>Test Title</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut exceptur</p>
+                </div>
+                <div class="info">
+                    <a href="#">Read More</a>
+                    <i class="fas fa-long-arrow-alt-right"></i>
+                </div>
+            </div>
+            <div class="box">
+                <img src="{% static 'marvies/imgs/cat-04.jpg '%}">
+                <div class="content">
+                    <h3>Test Title</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut exceptur</p>
+                </div>
+                <div class="info">
+                    <a href="#">Read More</a>
+                    <i class="fas fa-long-arrow-alt-right"></i>
+                </div>
+            </div>
+            <div class="box">
+                <img src="{% static 'marvies/imgs/cat-05.jpg '%}">
+                <div class="content">
+                    <h3>Test Title</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut exceptur</p>
+                </div>
+                <div class="info">
+                    <a href="#">Read More</a>
+                    <i class="fas fa-long-arrow-alt-right"></i>
+                </div>
+            </div>
+            <div class="box">
+                <img src="{% static 'marvies/imgs/cat-06.jpg '%}">
+                <div class="content">
+                    <h3>Test Title</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut exceptur</p>
+                </div>
+                <div class="info">
+                    <a href="#">Read More</a>
+                    <i class="fas fa-long-arrow-alt-right"></i>
+                </div>
+            </div>
+            <div class="box">
+                <img src="{% static 'marvies/imgs/cat-07.jpg '%}">
+                <div class="content">
+                    <h3>Test Title</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut exceptur</p>
+                </div>
+                <div class="info">
+                    <a href="#">Read More</a>
+                    <i class="fas fa-long-arrow-alt-right"></i>
+                </div>
+            </div>
+            <div class="box">
+                <img src="{% static 'marvies/imgs/cat-08.jpg '%}">
+                <div class="content">
+                    <h3>Test Title</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut exceptur</p>
+                </div>
+                <div class="info">
+                    <a href="#">Read More</a>
+                    <i class="fas fa-long-arrow-alt-right"></i>
+                </div>
+            </div>
+        </div>
+    </div> {% endcomment %}
+    <div class="spikes"></div>
+    <!-- end articals -->
+    <!-- start Gallery -->
+    <div class="Gallery" id="Gallery">
+        <h2 class="main-titel">Gallery Of Completed Works</h2>
+        <div class="container">
+            <div class="box">
+                <div class="image">
+                    <img src="  {% static 'marvies/imgs/admin-home.png '%}">
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="  {% static 'marvies/imgs/navigation.png '%}">
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="  {% static 'marvies/imgs/home.png'%}">
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="  {% static 'marvies/imgs/pos.png '%}">
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="  {% static 'marvies/imgs/hotel.png '%}">
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="  {% static 'marvies/imgs/food.png '%}">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end Gallery -->
+    <!-- start Features -->
+    <div class="Features" id="Features">
+        <h2 class="main-titel">Features</h2>
+        <div class="container">
+
+            <div class="box Quality">
+                <div class="img-holder">
+                    <img src="{% static 'marvies/imgs/features-01.jpg '%}">
+                </div>
+                <h2>Quality</h2>
+                <p>We search for quality and we give out quality contact us for your quality
+                    works!</p>
+                <a href="#Request A Discount">Contact Us</a>
+            </div>
+            <div class="box time">
+                <div class="img-holder">
+                    <img src="{% static 'marvies/imgs/features-02.jpg '%}">
+                </div>
+                <h2>Time</h2>
+                <p>We are time concious when executing any project
+                    we meet up and deliver</p>
+                <a href="#Request A Discount">Contact Us</a>
+            </div>
+            <div class="box passion">
+                <div class="img-holder">
+                    <img src="{% static 'marvies/imgs/features-03.jpg '%}">
+                </div>
+                <h2>Passion</h2>
+                <p>Our staffs are passionate about technology and what we do
+</p>
+                <a href="#Request A Discount">Contact Us</a>
+            </div>
+        </div>
+    </div>
+    <div class="spikes"></div>
+    <!-- end Features -->
+    <!-- start TESTIMONIALS -->
+    <div class="TESTIMONIALS" id="Testimonials">
+        <h2 class="main-titel">TESTIMONIALS</h2>
+        <div class="container">
+            <div class="box">
+                <img src="{% static 'marvies/imgs/avatar-01.png '%}">
+                <h3>Mr Victor Idika</h3>
+                <span class="titel">CEO VIZID DECORS</span>
+                <div class="rate">
+                    <i class="filled fas fa-star"></i>
+                    <i class="filled fas fa-star"></i>
+                    <i class="filled fas fa-star"></i>
+                    <i class="filled fas fa-star"></i>
+                    <i class="filled fas fa-star"></i>
+                </div>
+                <p>Marvies does a wonderful work the website the built for us is fully functional and is working fine</p>
+            </div>
+            <div class="box">
+                <img src="{% static 'marvies/imgs/avatar-02.png '%}">
+                <h3>ISLAM BEJOY</h3>
+                <span class="titel">BANGLADISH STUDENT</span>
+                <div class="rate">
+                    <i class="filled fas fa-star"></i>
+                    <i class="filled fas fa-star"></i>
+                    <i class="filled fas fa-star"></i>
+                    <i class="filled fas fa-star"></i>
+                    <i class="filled fas fa-star"></i>
+                </div>
+                <p>Marvies does sweet works, they helped finish my school coding project and i got a sweet mark for it.</p>
+            </div>
+            <div class="box">
+                <img src="{% static 'marvies/imgs/avatar-03.png '%}">
+                <h3>MRS ELLA</h3>
+                <span class="titel">STUDENT</span>
+                <div class="rate">
+                    <i class="filled fas fa-star"></i>
+                    <i class="filled fas fa-star"></i>
+                    <i class="filled fas fa-star"></i>
+                    <i class="filled fas fa-star"></i>
+                    <i class="filled fas fa-star"></i>
+                </div>
+                <p>Marvies is cool, i learnt coding from them and now am a backend developer. thanks to marvies soft tech</p>
+            </div>
+            
+        </div>
+    </div>
+    
+    <!-- end TESTIMONIALS -->
+    <!-- start Team Members -->
+    <div class="Team" id="Team Members">
+        <h2 class="main-titel">Team Members</h2>
+        <div class="container">
+            <div class="box">
+                <div class="data">
+                    <img src="{% static 'marvies/imgs/marvel.jpg'%}">
+                    <div class="social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="info">
+                    <h3>Ebube Idika</h3>
+                    <p>Team Lead</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="data">
+                    <img src="{% static 'marvies/imgs/evans.jpg'%}">
+                    <div class="social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="info">
+                    <h3>Dominic Evans</h3>
+                    <p>Designs Manager</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="data">
+                    <img src="{% static 'marvies/imgs/ifeoma.jpg'%}">
+                    <div class="social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="info">
+                    <h3>Nwankwo Ifeoma</h3>
+                    <p>Research Manager</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="data">
+                    <img src="{% static 'marvies/imgs/zuby.jpg'%}">
+                    <div class="social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="info">
+                    <h3>Nzubechi Prince</h3>
+                    <p>Project Manager </p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="data">
+                    <img src="{% static 'marvies/imgs/team_1.jpg'%}">
+                    <div class="social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="info">
+                    <h3>Islam Bejoy</h3>
+                    <p>Team Member </p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="data">
+                    <img src="{% static 'marvies/imgs/img.jpg'%}">
+                    <div class="social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="info">
+                    <h3>Israel</h3>
+                    <p>Team Member</p>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <div class="spikes"></div>
+    <!-- end Team Members -->
+    <!-- start SERVICES -->
+    <div class="SERVICES" id="Services">
+        <h2 class="main-titel">SERVICES</h2>
+        <div class="container">
+            <div class="box">
+                <i class="fas fa-user-shield  fa-4x"></i>
+                <h3> Strong Security and Authentication System</h3>
+                <div class="info">
+                    <a href="#">Details</a>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fas fa-tools fa-4x"></i>
+                <h3>Fixing Issues / Debugging</h3>
+                <div class="info">
+                    <a href="#">Details</a>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fas fa-user fa-4x"></i>
+                <h3>Teaching of Tech Skills</h3>
+                <div class="info">
+                    <a href="#">Details</a>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fas fa-bullhorn fa-4x"></i>
+                <h3>Hosting Services</h3>
+                <div class="info">
+                    <a href="#">Details</a>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fas fa-laptop-code fa-4x"></i>
+                <h3>Web/App Development</h3>
+                <div class="info">
+                    <a href="#">Details</a>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fas fa-palette fa-4x"></i>
+                <h3>UI/UX Designs</h3>
+                <div class="info">
+                    <a href="#">Details</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end SERVICES -->
+    <!-- start OUR SKILLS -->
+    <div class="our-skills" id="Our Skills">
+        <h2 class="main-titel">OUR SKILLS</h2>
+        <div class="container">
+            <img src="{% static 'marvies/imgs/skills.png'%}">
+            <div class="skills">
+                <div class="skill">
+                    <h3>Html <span>80%</span></h3>
+                    <div class="prog">
+                        <span style="width: 80%;" data-width="80%"></span>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h3>Css <span>85%</span></h3>
+                    <div class="prog">
+                        <span style="width: 85%;" data-width="85%"></span>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h3>JavaScript <span>70%</span></h3>
+                    <div class="prog">
+                        <span style="width: 70%;" data-width="70%"></span>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h3>Python <span>80%</span></h3>
+                    <div class="prog">
+                        <span style="width: 80%;" data-width="80%"></span>
+                    </div>
+                </div>
+                <div class="skill">
+                    <h3>UI/UX <span>75%</span></h3>
+                    <div class="prog">
+                        <span style="width: 75%;" data-width="75%"></span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    {% comment %} <div class="spikes"></div>
+    <!-- end OUR SKILLS -->
+    <!-- start work-steps -->
+    <div class="work-steps" id="How It works">
+        <h2 class="main-titel">HOW IT WORKS ?</h2>
+        <div class="container">
+            <img src="../template 3/imgs/work-steps.png">
+            <div class="info">
+                <div class="box">
+                    <img src="./imgs/work-steps-1.png">
+                    <div class="text">
+                        <h3>Business Analysis</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim nesciunt obcaecati quisquam
+                            quis laborum recusandae debitis vel</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="./imgs/work-steps-2.png">
+                    <div class="text">
+                        <h3>Architecture</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim nesciunt obcaecati quisquam
+                            quis laborum recusandae debitis vel</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="./imgs/work-steps-3.png">
+                    <div class="text">
+                        <h3>Developement</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim nesciunt obcaecati quisquam
+                            quis laborum recusandae debitis vel</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> {% endcomment %}
+    <!-- end work-steps -->
+    <!-- start events -->
+    {% comment %} <div class="events" id="Events"> {% endcomment %}
+        {% comment %} <div class="dots dots-up"></div>
+        <div class="dots dots-down"></div> {% endcomment %}
+        {% comment %} <h2 class="main-titel">LATEST EVENTS</h2> {% endcomment %}
+        {% comment %} <div class="container">
+            <img src="{% static 'marvies/imgs/events.png'%}">
+            <div class="info">
+                <div class="time">
+                    <div class="unit">
+                        <span class="Days">13</span>
+                        <span> Days</span>
+                    </div>
+                    <div class="unit">
+                        <span class="Hours">18</span>
+                        <span> Hours</span>
+                    </div>
+                    <div class="unit">
+                        <span class="Minutes">27</span>
+                        <span> Minutes</span>
+                    </div>
+                    <div class="unit">
+                        <span class="Seconds">48</span>
+                        <span> Seconds</span>
+                    </div>
+                </div>
+                <h2>Tech Masters Event 2021</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et vero tenetur doloremque iusto ut adipisci
+                    quam ratione aliquam excepturi nulla in harum, veritatis porro</p>
+            </div> {% endcomment %}
+            {% comment %} <div class="email">
+                <form action="">
+                    <input type="email" placeholder="Enter Your Email">
+                    <input type="submit" value="Subscribe">
+                </form>
+            </div>
+
+        </div>
+    </div> {% endcomment %}
+    <div class="spikes"></div>
+    <!-- end events -->
+    <!-- start PRICING PLANS -->
+    <div class="PRICING" id="Pricing Plans">
+        <div class="dots dots-up"></div>
+        <div class="dots dots-down"></div>
+        <h2 class="main-titel">HOSTING PLANS</h2>
+        <div class="container">
+            <div class="box">
+                <h2>Basic</h2>
+                <img src="{% static 'marvies/imgs/hosting-basic.png'%}">
+                <div class="pric">
+                    <span>$15</span>
+                    
+                </div>
+                <ul>
+                    <li>5GB HDD Space</li>
+                    <li>Domain Name</li>
+                    <li>Management from our team</li>
+                    <li>monthly</li>
+                    <li>Basic  Support</li>
+                </ul>
+                <a href="#">Choose Plan</a>
+
+            </div>
+            <div class="box activ">
+                <div class="label">Most Popular</div>
+                <h2>Advanced</h2>
+                <img src="{% static 'marvies/imgs/hosting-advanced.png'%}">
+                <div class="pric">
+                    <span>$150</span>
+                   
+                </div>
+                <ul>
+                    <li>10GB HDD Space</li>
+                    <li>Domain Name</li>
+                    <li>Management</li>
+                    <li>yearly</li>
+                    <li>Advanced Support</li>
+                </ul>
+                <a href="#">Choose Plan</a>
+            </div>
+            <div class="box">
+                <h2>Professional </h2>
+                <img src="{% static 'marvies/imgs/hosting-professional.png'%}">
+                <div class="pric">
+                    <span>$1500</span>
+                  
+                </div>
+                <ul>
+                    <li>15GB HDD Space</li>
+                    <li>Domain Name</li>
+                    <li>Management</li>
+                    <li>10 years</li>
+                    <li>Professional Support</li>
+                </ul>
+                <a href="#">Choose Plan</a>
+
+            </div>
+        </div>
+    </div>
+    <!-- end PRICING PLANS -->
+    <!-- start video -->
+    {% comment %} <div class="video" id="Top Videos">
+        <h2 class="main-titel">TOP VIDEOS</h2>
+        <div class="container">
+            <div class="holder">
+                <div class="list">
+                    <div class="name">
+                        TOP VIDEOS
+                        <i class="fas fa-random"></i>
+                    </div>
+                    <ul>
+                        <li>Playing With The DNS <span>03:18</span></li>
+                        <li>Everything About The Virtual Hosts <span>05:25</span></li>
+                        <li>How To Monitor Your Website <span>04:16</span></li>
+                        <li>Uncharted Beating The Last Boss <span>07:48</span></li>
+                        <li>Ys Oath In Felghana Overview <span>03:12</span></li>
+                        <li>Ys Series All Games Ending <span>08:10</span></li>
+                    </ul>
+                </div>
+                <div class="preview">
+                    <img src="./imgs/video-preview.jpg">
+                    <div class="info">Everything About The Virtual Hosts</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end video --> {% endcomment %}
+    <!-- start stats -->
+    <div class="stats" id="Stats">
+        <h2>Our Awesome Stats</h2>
+        <div class="container">
+            <div class="box">
+                <i class="far fa-user fa-2x fa-fw"></i>
+                <span class="number" data-goal="150">150</span>
+                <span class="text">Clients</span>
+            </div>
+            <div class="box">
+                <i class="fas fa-code fa-2x fa-fw"></i>
+                <span class="number" data-goal="135">135</span>
+                <span class="text">Projects</span>
+            </div>
+            <div class="box">
+                <i class="fas fa-globe-asia fa-2x fa-fw"></i>
+                <span class="number" data-goal="50">50</span>
+                <span class="text">Countries</span>
+            </div>
+            <div class="box">
+                <i class="far fa-money-bill-alt fa-2x fa-fw"></i>
+                <span class="number" data-goal="500">500</span>
+                <span class="text">Money</span>
+            </div>
+        </div>
+    </div>
+    <!-- end stats -->
+    <!-- start Discount -->
+    <div class="Discount" id="Request A Discount">
+        <div class="image">
+            <div class="content">
+                <h2>We Have Discounts</h2>
+                <h1> for our prestigious clients </h1>
+                <img src="{% static 'marvies/imgs/discount.png'%}">
+            </div>
+        </div>
+        <div class="form">
+            <h2>Contact Us </h2>
+            <form action=""  method="post">
+                <input type="text" placeholder="Your Name"  name="name">
+                <input type="email" placeholder="Your Email" name="email">
+                <input type="text" placeholder="Your Phone" name="phone">
+                <textarea class="input" placeholder="Tell Us About Your Needs" name="message" name="message"></textarea>
+                <input type="submit" value="Send">
+            </form>
+        </div>
+    </div>
+    <!-- end Discount -->
+    <!-- start footer -->
+    <footer>
+        <div class="container">
+         <div class="box1">
+            <h3>Marvies Soft Technology</h3>
+            <ul class="social">
+                <li>
+                  <a href="#" class="facebook">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="twitter">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="youtube">
+                    <i class="fab fa-youtube"></i>
+                  </a>
+                </li>
+              </ul>
+            <p>Contact Marvies Soft Technology through our social media platforms</p>
+         </div>
+         {% comment %} <div class="box2">
+            <ul class="links">
+                <li><a href="#">Important Link 1</a></li>
+                <li><a href="#">Important Link 2</a></li>
+                <li><a href="#">Important Link 3</a></li>
+                <li><a href="#">Important Link 4</a></li>
+                <li><a href="#">Important Link 5</a></li>
+              </ul>
+         </div> {% endcomment %}
+         <div class="box3">
+                <div class="line">
+                  <i class="fas fa-map-marker-alt fa-fw"></i>
+                  <div class="info">24b Ogbonna stree aba,Abia state, Nigeria</div>
+                </div>
+                <div class="line">
+                  <i class="far fa-clock fa-fw"></i>
+                  <div class="info">Contact Us Anytime For Your Works</div>
+                </div>
+                <div class="line">
+                  <i class="fas fa-phone-volume fa-fw"></i>
+                  <div class="info">
+                    <span>08132106194</span>
+                    <span>08091944802</span>
+                  </div>
+                </div>
+         </div>
+         <div class="box4 Discount" >
+            <div class="imags">
+                <img src="{% static 'marvies/imgs/landing-image.png'%}"><a href="" class="go-down"></a>
+            </div>
+        </div>
+        
+        </div>
+        <p class="copyright">Made With &lt;3 By Marvies</p>
+    </footer>
+    <!-- end footer -->
+</body>
+
+</html>
